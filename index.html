@@ -1,0 +1,430 @@
+# Example
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pagina</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, intial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="tabla-precios.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+* {margin: 0; padding: 0;}
+html, body {height: 100%; width: 100%; font-size: 1rem; font-family: 'Exo', sans-serif; font-weight: 100;}
+.cont-slider {
+    position: relative;
+    height: 98vh;
+    max-height: 100vh;
+    width: auto;
+    min-width: 98.6vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider {
+    animation: deslizante 25s ease-out 0s backwards infinite;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500%;
+    height: 100%;
+}
+.slide {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 100%;    
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.slide span {
+    background: rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    position: absolute;
+    margin-right:500px; 
+    margin-left:500px;
+    left: 0;
+    top: 35vh;
+    font-size: 50px;
+    line-height: 20vh;
+    border: 1px solid rgba(255,255,255,.45);
+    border-left: 0 none;
+}
+.uno {
+  background-image: url(img/Desert.png);}
+.dos {
+  background-image: url(img/Desert.png);}
+.tres {
+  background-image: url(img/Desert.png);}
+.cuatro {
+  background-image: url(img/Desert.png);}
+.cinco {
+  background-image: url(img/Desert.png);}
+
+@keyframes deslizante {
+  0% {left: 0%; }
+  15% {left: 0%; }
+  20% {left: -100%; }
+  35% {left: -100%; }
+  40% {left: -200%; }  
+  55% {left: -200%; }
+  60% {left: -300%; }
+  75% {left: -300%; }
+  80% {left: -400%; }
+  95% {left: -400%; }   
+  100% {left: 0; }
+}
+    @media only screen and (min-width:320px) and (max-width:768px){
+        .slider article span{
+            font-size: 48px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="padre">
+	<header class="header ">
+		<div class="menu margen-interno">
+			<div class="logo">
+				<a href="index.html" >LogoCorporativo</a>
+			</div>
+			<nav class="nav">
+				<a href="#Inicio" id="Inicio" >Inicio</a>
+				<a href="#Matriculas" >Matriculas</a>
+				<a href="#Contactenos" >Contactenos</a>
+				<a href="#Sobre-Nosotros" >Sobre Nosotros</a>
+				<a href="#Instalaciones">Instalaciones</a>
+				<a href="#Servicios" >Servicios</a>
+				<a href="#Ubicación" >Ubicación</a>
+				
+		</nav>
+			
+			<div class="social">
+				<div>
+					<a href="#" style="text-decoration: none;">Facebook</a>
+				</div>
+			</div>
+		</div>
+		
+<div class="texto-principal">
+	<header class="cont-slider">
+
+    <section class="slider">
+    
+ <article class="slide uno">
+ <span>Por Sendas </span></article><!--
+ 
+ --><article class="slide dos">
+ <span>Veredas y</span></article><!--
+ 
+ --><article class="slide tres">
+ <span>Carriles del</span></article><!--
+ 
+ --><article class="slide cuatro">
+ <span>Bosque Css</span></article><!--
+ 
+ --><article class="slide cinco">
+ <span>con Kseso</span></article>
+    
+    </section>
+</div>
+<br>
+	</header>
+	<h4 id="Matriculas">Matriculas</h4>
+	<section class="section margen-interno" >
+		
+					<div class="columna" style="height: 400px;">
+		<h2 style="text-align:center;">Preescolar-1</h2>
+		<p class="precio" style="text-align: center;">$500</p>
+		<p  style="text-align: center;">Lorem ipsum dolor sit aghgfgfgfgfgf</p>
+		<hr>
+		<p  style="text-align: center;">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+		<p  style="text-align: center;">ghghghhghghghghggh</p>
+		<hr>
+	</div>
+					<div class="columna" style="height: 400px;">
+		<h2 style="text-align:center;">Preescolar-1</h2>
+		<p class="precio" style="text-align: center;">$500</p>
+		<p  style="text-align: center;">Lorem ipsum dolor sit aghgfgfgfgfgf</p>
+		<hr>
+		<p  style="text-align: center;">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+		<p  style="text-align: center;">ghghghhghghghghggh</p>
+		<hr>
+	</div>
+					<div class="columna" style="height: 400px;">
+		<h2 style="text-align:center;">Preescolar-1</h2>
+		<p class="precio" style="text-align: center;">$500</p>
+		<p  style="text-align: center;">Lorem ipsum dolor sit aghgfgfgfgfgf</p>
+		<hr>
+		<p  style="text-align: center;">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+		<p  style="text-align: center;">ghghghhghghghghggh</p>
+		<hr>
+	</div>
+		<br>
+
+		<aside class="aside" style="width: 550px;">
+			<div class="publicidad">
+				<h4 id="Contactenos">Contactenos</h4>
+				<ul style="list-style: none;">
+					<br>
+					<li>
+						Telefonos: <a href="#" style="color: #cec0c0"> (+58)</a>
+					</li>
+					<hr >
+					<br>
+					<br>
+					<li>
+						Correos: <a href="#" style="color: #cec0c0">example1234@gmail.com</a> 
+					</li>
+					<hr>
+					<br>
+					<br>
+					<li>
+						Facebook: <a href="#" style="color: #cec0c0">example example</a> 
+					</li>
+
+					<hr>
+					<br>
+					<br>
+					<li>
+						Instagram: <a href="#" style="color: #cec0c0">example</a> 
+					</li>
+					<hr>
+				</ul>
+			</div>
+		</aside>
+
+	</section>
+	<section class="section margen-interno" >
+		
+			
+					<div class="columna" style="height: 400px;">
+		<h2 style="text-align:center;">Preescolar-1</h2>
+		<p class="precio" style="text-align: center;">$500</p>
+		<p  style="text-align: center;">Lorem ipsum dolor sit aghgfgfgfgfgf</p>
+		<hr>
+		<p  style="text-align: center;">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+		<p  style="text-align: center;">ghghghhghghghghggh</p>
+		<hr>
+	</div>
+					<div class="columna" style="height: 400px;">
+		<h2 style="text-align:center;">Preescolar-1</h2>
+		<p class="precio" style="text-align: center;">$500</p>
+		<p  style="text-align: center;">Lorem ipsum dolor sit aghgfgfgfgfgf</p>
+		<hr>
+		<p  style="text-align: center;">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+		<p  style="text-align: center;">ghghghhghghghghggh</p>
+		<hr>
+	</div>
+					<div class="columna" style="height: 400px;">
+		<h2 style="text-align:center;">Preescolar-1</h2>
+		<p class="precio" style="text-align: center;">$500</p>
+		<p  style="text-align: center;">Lorem ipsum dolor sit aghgfgfgfgfgf</p>
+		<hr>
+		<p  style="text-align: center;">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+		<p  style="text-align: center;">ghghghhghghghghggh</p>
+		<hr>
+	</div>
+		<br>
+
+		<aside class="aside" style="width: 550px;">
+			<div class="publicidad">
+				<h4 id="Sobre-Nosotros">Sobre Nosotros</h4>
+				<ul style="list-style: none;">
+					<br>
+					<div class="contenedor" style="width: 250px; height: 250px;"  >
+		</div>	
+		<br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+			</div>
+		</aside>
+		
+	</section>
+	<br>
+	<h4 id="Instalaciones">Instalaciones</h4>
+	<br>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+		<div class="images-section">
+		<div class="item">
+			<div class="imagen">
+				<img src="i1.png">
+			</div>
+			<div class="info">
+				<h2>Titulo 1</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+				</p>
+			</div>
+		</div>
+		<div class="item">
+			<div class="imagen">
+				<img src="i2.png">
+			</div>
+			<div class="info">
+				<h2>Titulo 1</h2>
+				<p>
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				</p>
+			</div>
+		</div>
+		<div class="item">
+			<div class="imagen">
+				<img src="i3.png">
+			</div>
+			<div class="info">
+				<h2>Titulo 3</h2>
+				<p>
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no
+					nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="arrows">
+		<div class="fas fa-arrow-left"></div>
+		<div class="fas fa-arrow-right"></div>
+	</div>
+<script src="script.js"></script>
+	<br>
+	<h4 id="Servicios">Servicios</h4>
+	<br>
+	<h2 style="color: black;"><storng>Actividades</storng></h2>
+	<section class="section margen-interno" >
+
+					<p style="width: 550px; text-align: justify;">
+						<br>
+Desarrollamos actividades apropiadas para cada nivel, que promueven el aprendizaje significativo. Entre ellas, podemos mencionar:
+<br>
+<br>
+	Cuenta Cuentos
+	<br>
+<br>
+	Teatro Títeres
+	<br>
+<br>
+	Dramatizaciones
+	<br>
+<br>
+	Entre otros
+
+
+</p>
+		
+		<aside class="aside" style="margin-left: 150px;">
+			<div class="publicidad">
+				<div class="contenedor" >
+		</div>			
+			</div>
+		</aside>
+	</section>
+	<br>
+	<h2 style="color: black;"><storng>Seguridad y Comodidad</storng></h2>
+	<section class="section margen-interno" >
+
+					<p style="width: 550px; text-align: justify;">
+						<br>
+Estamos cuidados por una agencia de seguridad que presta sus servicios las 24 horas del día durante todo el año.
+Mantenemos 10 rutas de transporte colegial para comodidad de nuestros niños y nos involucramos con los conductores y dueños del transporte asignando las rutas y estableciendo las normas que, como escuela, requerimos sobre este servicio. Jardín de Niños asigna a teachers de nuestra escuela en las rutas de bus colegial para que sus niños lleven un seguimiento de aprendizaje hasta llegar a sus casas.
+
+</p>
+		
+		<aside class="aside" style="margin-left: 150px;">
+			<div class="publicidad">
+			<div class="contenedor" >
+		</div>			
+			</div>
+		</aside>
+	</section>
+	<br>
+	<h2 style="color: black;"><storng>Programa
+</storng></h2>
+	<section class="section margen-interno" >
+
+					<p style="width: 550px; text-align: justify;">
+						<br>
+Los estudiantes de nuestro centro participan en actividades académicas, deportivas y artísticas.  Dentro de nuestro currículo integrado se incorpora motricidad fina, motricidad gruesa, música, matemáticas, arte, cocina, gimnasia, socialización, pensamiento, lenguaje y comunicación. A través del programa ofrecido por Jardín de Niños, nuestros estudiantes desarrollan habilidades de pre-escritura, pre-lectura, desarrollo motriz, desarrollo del lenguaje y madurez social.
+</p>
+		
+		<aside class="aside" style="margin-left: 150px;">
+			<div class="publicidad">
+				<div class="contenedor" >
+		</div>			
+			</div>
+		</aside>
+	</section>
+	<br>
+	<h4 id="Ubicación">Ubicación</h4>
+	<br>
+	<section class="section margen-interno" >
+
+		<p style="width: 350px; text-align: justify;">
+			<br>
+		<br>
+Estamos cuidados por una agencia de seguridad que presta sus servicios las 24 horas del día durante todo el año.
+Mantenemos 10 rutas de transporte colegial para comodidad de nuestros niños y nos involucramos con los conductores y dueños del transporte asignando las rutas y estableciendo las normas que, como escuela, requerimos sobre este servicio. Jardín de Niños asigna a teachers de nuestra escuela en las rutas de bus colegial para que sus niños lleven un seguimiento de aprendizaje hasta llegar a sus casas.
+
+</p>
+
+</p>			
+		<aside class="aside" >
+			<div class="publicidad">
+				<ul style="list-style: none;">
+					<div class="contenedor" >
+		</div>			
+		
+			</div>
+		</aside>
+	</section>
+	<br>
+	<footer class="footer margen-interno">
+		<div class="pie">
+			<a href="#">Desarrollo por tal</a>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
